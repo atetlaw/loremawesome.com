@@ -7,7 +7,7 @@ $(function(){
       $('.awesome').removeClass('awesome-rotate1').addClass('awesome-rotate2');
       setTimeout(lorem_rotate1, 1000);
     }
-   lorem_rotate1(); 
+   $('#theme').bind('playing',function(){lorem_rotate1();});
 });
 
 
