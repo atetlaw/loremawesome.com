@@ -7,10 +7,8 @@ $(function(){
       $('.awesome').removeClass('awesome-rotate1').addClass('awesome-rotate2');
       setTimeout(lorem_rotate1, 1000);
    }
-   $('#theme').bind('loadeddata',function(){console.log('loadeddata')});
-   $('#theme').bind('playing',function(){console.log('playing')});
    
-   $('#theme').bind('playing',function(){lorem_rotate1();});
+   $('#theme').bind('loadeddata',function(){lorem_rotate1();});
 });
 
 
