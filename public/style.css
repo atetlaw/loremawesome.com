@@ -222,17 +222,13 @@ a:hover { color: #036; }
   
 .awesome {
   display: inline-block;
- 	-webkit-animation-name: spin;
- 	-webkit-animation-duration: 2s;
- 	-webkit-animation-iteration-count: infinite;
- 	-webkit-transform-origin: 50% 50%;
- 	-webkit-animation-timing-function: linear;
   font-size: 1.2em;
   text-shadow: 2px 2px 0 orange, 3px 3px 0 purple, 4px 4px 0 orange, 5px 5px 0 purple, 6px 6px 0 orange, 7px 7px 0 purple, 8px 8px 0 orange, 9px 9px 0 purple, 10px 10px 0 orange;
   -moz-transition: -moz-transform 1s linear;
-      -o-transition: -o-transform 1s linear;
-    -ms-transition: -ms-transform 1s linear;
- }
+  -o-transition: -o-transform 1s linear;
+  -ms-transition: -ms-transform 1s linear;
+  -webkit-transition: -webkit-transform 1s linear;
+}
  
 .awesome-rotate {
 
@@ -241,14 +237,23 @@ a:hover { color: #036; }
   -moz-transform: rotate(360deg);  
     -o-transform: rotate(360deg);   
    -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
 }
 .awesome-rotate2 {
   -moz-transform: rotate(-360deg);  
     -o-transform: rotate(-360deg);   
    -ms-transform: rotate(-360deg);
+ -webkit-transform: rotate(-360deg);
 }
 
-
+.awesome-webkit {
+  display: inline-block;
+ 	-webkit-animation-name: spin;
+ 	-webkit-animation-duration: 2s;
+ 	-webkit-animation-iteration-count: infinite;
+ 	-webkit-transform-origin: 50% 50%;
+ 	-webkit-animation-timing-function: linear;
+}
 @-webkit-keyframes spin {
  from {
    -webkit-transform: rotate(0deg);
