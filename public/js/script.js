@@ -7,8 +7,14 @@ $(function(){
       $('.awesome').removeClass('awesome-rotate1').addClass('awesome-rotate2');
       setTimeout(lorem_rotate1, 1000);
    }
-   
-   $('#theme').bind('loadeddata',function(){lorem_rotate1();});
+   $('#theme').bind('loadeddata',function(){
+      this.play();
+    });
+   $('#theme').bind('playing',function(){
+     lorem_rotate1();
+   });
+   //var audio = $('#theme').get(0);
+   //audio.play();
 });
 
 

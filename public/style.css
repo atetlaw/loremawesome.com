@@ -236,13 +236,13 @@ a:hover { color: #036; }
 .awesome-rotate1 {
   -moz-transform: rotate(360deg);  
     -o-transform: rotate(360deg);   
-   -ms-transform: rotate(360deg);
+   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(360deg);
 }
 .awesome-rotate2 {
   -moz-transform: rotate(-360deg);  
     -o-transform: rotate(-360deg);   
-   -ms-transform: rotate(-360deg);
+   -ms-transform: rotate(-45deg);
  -webkit-transform: rotate(-360deg);
 }
 
