@@ -9,12 +9,12 @@ $(function(){
    }
    $('#theme').bind('loadeddata',function(){
       this.play();
+    }).bind('playing',function(){
+      lorem_rotate1();
     });
-   $('#theme').bind('playing',function(){
-     lorem_rotate1();
-   });
-   //var audio = $('#theme').get(0);
-   //audio.play();
+    
+   var audio = $('#theme').get(0);
+   audio.load();  //this seems to be the best way to ensure the audio triggers the animation cross-browser. without this call, it's all up in the air. Firefox and IE9 are the most finiky
 });
 
 
